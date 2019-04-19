@@ -27,8 +27,8 @@ elasticsearch-*
 config/base.yaml
 _data
 xcuserdata
-components/**/*.jsx
-components/**/*.js
+#components/**/*.jsx
+#components/**/*.js
 my-release-key.keystore
 .vscode
 yarn.lock
