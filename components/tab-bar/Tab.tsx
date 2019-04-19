@@ -12,6 +12,8 @@ export interface TabProps {
   onClick?: () => void;
   unselectedTintColor?: string;
   tintColor?: string;
+  unselectedBackgroundTintColor?: string;
+  backgroundTintColor?: string;
   dataAttrs?: {
     [key: string]: string;
   };
@@ -69,13 +71,17 @@ class Tab extends React.PureComponent<TabProps, any> {
       selected,
       unselectedTintColor,
       tintColor,
+      unselectedBackgroundTintColor,
+      backgroundTintColor,
     } = this.props;
     const iconColor = selected ? tintColor : unselectedTintColor;
+    const backgroundColor = selected ? unselectedBackgroundTintColor : backgroundTintColor;
     return (
       <div
         {...this.props.dataAttrs}
         onClick={this.onClick}
         className={`${prefixCls}`}
+        style={{ backgroundColor }}
       >
         <div className={`${prefixCls}-icon`} style={{ color: iconColor }}>
           {this.renderIcon()}

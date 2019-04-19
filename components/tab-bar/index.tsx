@@ -35,6 +35,8 @@ class AntTabBar extends React.Component<AntTabbarProps, any> {
     tintColor: '#108ee9',
     hidden: false,
     unselectedTintColor: '#888',
+    backgroundTintColor: 'white',
+    unselectedBackgroundTintColor: '#eee',
     placeholder: '正在加载',
     animated: false,
     swipeable: false,
@@ -58,6 +60,8 @@ class AntTabBar extends React.Component<AntTabbarProps, any> {
       prefixCls,
       tintColor,
       unselectedTintColor,
+      backgroundTintColor,
+      unselectedBackgroundTintColor,
       hidden,
       tabBarPosition,
     } = this.props;
@@ -76,6 +80,8 @@ class AntTabBar extends React.Component<AntTabbarProps, any> {
           title={cProps.title}
           tintColor={tintColor}
           unselectedTintColor={unselectedTintColor}
+          backgroundTintColor={backgroundTintColor}
+          unselectedBackgroundTintColor={unselectedBackgroundTintColor}
           dataAttrs={getDataAttr(cProps)}
           onClick={() => cProps.onPress && cProps.onPress()}
         />
