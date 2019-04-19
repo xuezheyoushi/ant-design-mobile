@@ -22,13 +22,13 @@ npm-debug.log
 nohup.out
 _site
 /dist
-lib
+#lib
 elasticsearch-*
 config/base.yaml
 _data
 xcuserdata
-components/**/*.jsx
-components/**/*.js
+#components/**/*.jsx
+#components/**/*.js
 my-release-key.keystore
 .vscode
 yarn.lock
